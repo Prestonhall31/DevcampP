@@ -56,4 +56,4 @@ gem 'devise', '~> 4.2'
 
 gem 'bootstrap', '~> 4.0.0.alpha6'
 
-gem 'hall_view_tool', git: 'https://github.com/Prestonhall31/hall_view_tool'
+gem 'hall_view_tool', '~> 0.1.0'
