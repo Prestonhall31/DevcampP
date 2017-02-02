@@ -42,6 +42,10 @@ module ApplicationHelper
         url: portfolios_path,
         title: 'Portfolios'
       },
+      {
+        url: tech_news_path,
+        title: 'Tech News'
+      },
     ]
   end
 
@@ -70,5 +74,5 @@ module ApplicationHelper
   def alert_generator msg
       js add_gritter(msg, title: "Preston Halls Portfolio", sticky: false)
   end
-  
+
 end
