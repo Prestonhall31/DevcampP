@@ -1,6 +1,8 @@
 @import "bootstrap";
 @import "jquery-ui";
 @import "gritter";
+@import "font-awesome";
+
 
 body {
   font-family: 'Open Sans', sans-serif;
@@ -75,4 +77,9 @@ footer p {
 
 .portfolio-container {
   padding-top: 300px;
+}
+
+.portfolio-crumb a {
+  font-size: 2em;
+  margin: 0px 10px 0px 10px
 }
