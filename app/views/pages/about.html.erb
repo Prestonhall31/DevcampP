@@ -50,36 +50,93 @@
         <p>
           <div class="collapse" id="jobHistory">
             <div class="card card-block">
-              Job 1
+              <div class="row">
+                <div class="col-md-3">
+                  <%= image_tag "USACAPOC.jpg", width: "100%", alt: "Job1 image" %>
+                </div>
+                <div class="col-md-9">
+                  <stong>Civil Affairs Team Sergeant 2008-Present</stong>
+                  <p>
+                    I joined the U.S. Army Reserves as a Civil Affairs Specialist. Working as a CA Specialist, I am able to help rebuild countries that have been torn apart by war or corruption. I spent a year (2009-2010) in Afghanistan helping to rebuild the local infrastructure and managing companies to build roads, schools and other projects in multiple cities/provinces with my area of operations. I am currently a Team sergeant in a team of 5. I support and train my subordinate soldiers and work with leadership to develop training to insure that we as a company are mission ready.
+                    </p>
+                </div>
+              </div>
             </div>
             <div class="card card-block">
-              Job 2
+              <div class="row">
+                <div class="col-md-3">
+                  <%= image_tag "C21.jpeg", width: "100%", alt: "Job1 image" %>
+                </div>
+                <div class="col-md-9">
+                  <stong>Century 21 Everest Realty 2014-Present</stong>
+                  <p>
+                    - this is what goes in the second education title
+                    </p>
+                </div>
+              </div>
             </div>
           </div>
           <div class="collapse" id="education">
             <div class="card card-block">
-              School 1
+              <div class="row">
+                <div class="col-md-3">
+                  <%= image_tag "bottegalogo.jpg", width: "100%", alt: "Tech School image" %>
+                </div>
+                <div class="col-md-9">
+                  <stong>Bottega Tech 2017</stong>
+                  <p>
+                    I completed Bottega Tech Coding bootcamp in March of 2017. I learned skills to develop and build websites and databases using Ruby programming language as well as the Rails framework. I learned to implement SCSS, Javascript, SQL database management, and other features into the websites that I build.
+                    </p>
+                </div>
+              </div>
             </div>
             <div class="card card-block">
-              School 2
+              <div class="row">
+                <div class="col-md-3">
+                  <%= image_tag "WGU.png", width: "100%", alt: "School1 image" %>
+                </div>
+                <div class="col-md-9">
+                  <stong>Western Governors University 2014-2017</stong>
+                  <p>
+                    I am currently attending Western Governors University and will be graduating 2017 with my Bachelor's Degree in Business Management.
+                    </p>
+                </div>
+              </div>
+            </div>
+            <div class="card card-block">
+              <div class="row">
+                <div class="col-md-3">
+                  <%= image_tag "SLCC.jpg", width: "100%", alt: "School2 image" %>
+                </div>
+                <div class="col-md-9">
+                  <stong>Salt Lake Community College 2011-2013</stong>
+                  <p>
+                    I completed my Associates Degree at Salt Lake community College.
+                    </p>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="collapse" id="skills">
-            <div class="skills">
-              <% @skills.each do |skill| %>
-                <div>
-                  <p><%= skill.title %></p>
-                  <div class="progress">
-                    <div
-                      class="progress-bar progress-bar-striped bg-success"
-                      role="progressbar"
-                      aria-valuenow="<%= skill.percent_utilized %>"
-                      aria-valuemax="100"
-                      style="width: <%= skill.percent_utilized %>%"
-                    ></div>
-                  </div>
+          <div class="row">
+            <div class="col-md-7">
+              <div class="collapse" id="skills">
+                <div class="skills">
+                  <% @skills.each do |skill| %>
+                    <div>
+                      <p><%= skill.title %></p>
+                      <div class="progress">
+                        <div
+                          class="progress-bar progress-bar-striped bg-success"
+                          role="progressbar"
+                          aria-valuenow="<%= skill.percent_utilized %>"
+                          aria-valuemax="100"
+                          style="width: <%= skill.percent_utilized %>%"
+                        ></div>
+                      </div>
+                    </div>
+                  <% end %>
                 </div>
-              <% end %>
+              </div>
             </div>
           </div>
         </p>
